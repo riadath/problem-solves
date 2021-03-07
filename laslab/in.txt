@@ -1,0 +1,98 @@
+40
+6707 KolurBolod Pouranik UjirerNoroshundor 1569
+4797 Futball Omanushik AdminCadre 1952
+5167 BanglaCinema Vromon FoklaStar 2519
+5252 Rasta Omanushik KumvKoron 2101
+6575 GhorarDim Rajniti FoklaStar 1637
+7666 Fereshta Ottadhunik FoklaStar 1860
+9200 PoliceJokhonDoctor Rajniti FoklaStar 2603
+3445 VindeshiPan KhanaPina AdminCadre 1559
+7250 BomberedIntelligence Vuture PopoyeTheSailor 1489
+3716 Adosho KhanaPina Keshto 2171
+6272 EkCupCha Rajniti PopoyeTheSailor 2593
+1970 GPA5 Omanushik BanglarBagh 2538
+1780 BCS Pouranik PopoyeTheSailor 1786
+2652 PetukMunshi Omanushik AdminCadre 2168
+4612 CricAt Oitihashik DoyalBaba 1746
+3140 Racist KhanaPina AmiLikniNai 1994
+4952 GoriberAhongkar Provabito FoklaStar 2301
+1474 Owwakthu Provabito UjirerNoroshundor 1757
+2646 BanglaCinema ShukheThakleVuteKilay KumvKoron 2393
+5939 MurkherCertificate Omanushik PopoyeTheSailor 1968
+6891 ShoppingMall Omanushik KumvKoron 1730
+1866 BomberedIntelligence Vromon Keshto 2529
+4395 GoriberAhongkar ShukheThakleVuteKilay FoklaStar 2856
+3459 MitthukMontri ShukheThakleVuteKilay AdminCadre 1786
+8472 Futball Mohanuvob JonodorodiMontri 2468
+6080 PanirPeyala Pouranik Keshto 1847
+8215 GPA5 Rajniti AdminCadre 2079
+8087 HeyDay Oitihashik DoyalBaba 2609
+6747 SobujPordar Vuture UjirerNoroshundor 2164
+3904 ShoppingMall Ottadhunik AmiLikniNai 2516
+9172 BecheThak Rajniti JonodorodiMontri 2464
+8003 GolamPriyo KhanaPina UjirerNoroshundor 1601
+2107 UpSideDown Vuture ElakarBoroVai 2197
+5888 EkCupCha ShukheThakleVuteKilay JonodorodiMontri 1477
+6746 ShikkhitoShap Provabito BanglarBagh 2298
+8055 Owwakthu Nayokochito ElakarBoroVai 1852
+3770 KolurBolod Vromon AmiLikniNai 2087
+1090 SonarChamuch KhanaPina BanglarBagh 1760
+4616 DutoKachaMorich Nayokochito DoyalBaba 1608
+2679 OndhoVokto Provabito FoklaStar 2988
+56
+2 2004
+2 2878
+1 KhanaPina
+1 Provabito
+1 Pouranik
+1 Ottadhunik
+2 1491
+2 2646
+1 ShukheThakleVuteKilay
+1 Mohanuvob
+2 2176
+2 2445
+2 2703
+1 Vuture
+2 2212
+2 1759
+2 2301
+1 Mohanuvob
+1 Provabito
+2 2608
+1 Ottadhunik
+2 2587
+2 1809
+2 2942
+2 1902
+2 1664
+1 Ottadhunik
+1 Nayokochito
+1 Rajniti
+2 1717
+2 2838
+2 1910
+1 Ottadhunik
+1 Omanushik
+2 2435
+2 1551
+2 1722
+1 Rajniti
+2 1969
+1 Vromon
+2 2932
+1 Pouranik
+2 2841
+2 1507
+1 Vuture
+1 KhanaPina
+2 2682
+2 2075
+1 Vromon
+1 Mohanuvob
+2 1765
+2 2772
+2 2630
+1 Nayokochito
+2 1968
+1 Omanushik
