@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+
 int arr_one[500],arr_two[500],arr_sum[500];
 int size_one,size_two,size_sum;
 void multiply(int a,int n)
@@ -71,7 +71,7 @@ void multiply(int a,int n)
             arr_sum[size_sum++] = carry%10;
             carry /= 10;
         }
-        size_one = 0,size_two Z 0;
+        size_one = 0,size_two = 0;
         for(int i = 0; i < size_two+200; i++)
             arr_two[i] = 0;
 
@@ -100,8 +100,10 @@ void multiply(int a,int n)
 
 int main()
 {
+    // freopen("in.txt", "r", stdin);
+	// freopen("out.txt", "w", stdout);
     int a,n,i;
-    while(scanf("%d %d",&n,&a) && n)
+    while(std::cin>>n>>a)
     {
         multiply(a,n);
         for(i = size_sum-1; i >= 0; i--)
