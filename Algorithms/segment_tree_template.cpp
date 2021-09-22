@@ -36,24 +36,24 @@ bool comp(const pii &a, const pii &b)
 #define MX 100009
 ll arr[100009];
 int n, q;
-struct data
+struct detum
 {
     bool flag;
     ll sum, cmd;
 };
-data tree[3 * MX];
+detum tree[3 * MX];
 
-data make_data(int s, int c, bool f)
+detum make_detum(int s, int c, bool f)
 {
-    data ret;
+    detum ret;
     ret.cmd = c;
     ret.sum = s;
     ret.flag = f;
     return ret;
 }
-data combine(data a, data b)
+detum combine(detum a, detum b)
 {
-    data ret;
+    detum ret;
     ret.sum = a.sum + b.sum; //query operation(sum,max,min etc)
     ret.flag = 0;
     ret.cmd = 0;
@@ -107,10 +107,10 @@ void update(int nd, int st, int en, int i, int j, int cm)
     tree[nd] = combine(tree[left], tree[right]);
 }
 
-data query(int nd, int st, int en, int i, int j)
+detum query(int nd, int st, int en, int i, int j)
 {
     if (st > j || en < i)
-        return make_data(0, 0, 0); //make_data(inf for min,0 for max etc.);
+        return make_detum(0, 0, 0); //make_detum(inf for min,0 for max etc.);
     if (st >= i && en <= j)
     {
         return tree[nd];
@@ -119,8 +119,8 @@ data query(int nd, int st, int en, int i, int j)
     int left = 2 * nd, right = left + 1;
     if (tree[nd].flag)
         lz_update(nd, st, en);
-    data a = query(left, st, mid, i, j);
-    data b = query(right, mid + 1, en, i, j);
+    detum a = query(left, st, mid, i, j);
+    detum b = query(right, mid + 1, en, i, j);
     return combine(a, b);
 }
 
