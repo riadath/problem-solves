@@ -26,6 +26,7 @@ long long oll = 0;
 #define se second
 #define pi4 pair<pii, pii>
 #define all(a) a.begin(), a.end()
+
 #define seg_tree int mid = (st + en) / 2, left = 2 * nd, right = left + 1
 
 bool comp(const pii &a, const pii &b)
