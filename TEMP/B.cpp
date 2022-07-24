@@ -31,11 +31,14 @@ int main()
     int T;cin>>T;
     while(T--){
         int n,m;cin>>n>>m;
-        vector<pii>arr;
-        vector<int>cnt(n + 1,0);
+        vector<pll>arr;
+        vector<ll>cnt(n + 1,0);
+        vector<ll>fren[n + 1];
+        vector<ll>weight(n + 1,0);
         for (int i = 0; i < n; i++)
         {
             int t;cin>>t;
+            weight[i + 1] = t;
             arr.pb({t,i + 1});
         }
         sort(all(arr));
@@ -44,36 +47,52 @@ int main()
             int x,y;
             cin>>x>>y;
             cnt[x]++,cnt[y]++;
+            fren[x].pb(y),fren[y].pb(x);
         }
         if(!(m%2)){
             cout<<0<<"\n";
             continue;
         }
-        ll cur_mn = 1e18;
+        ll cur_mn = 1e12;
         for (int i = 0; i < (int)arr.size(); i++)
         {
-            cout<<arr[i].se<<"   weight : "<<arr[i].fi<<"  count : "<<cnt[arr[i].se]<<"\n";
+            // cout<<arr[i].se<<"   weight : "<<arr[i].fi<<"  count : "<<cnt[arr[i].se]<<"\n";
             if(cnt[arr[i].se]%2){
-                cur_mn = min((int)cur_mn,arr[i].fi);
+                cur_mn = min(cur_mn,arr[i].fi);
             }
         }
         
         ll sum = 0,mn_w = 0;
+
         for (int i = 0; i < n; i++)
         {
-            if(cnt[arr[i].se]%2 == 0){
-                sum += cnt[arr[i].se];
-                mn_w += arr[i].fi;
-                if(sum >= n)break;
+            mn_w = 0;
+            mn_w += arr[i].fi;
+            for(int j = 0;j < fren[arr[i].se].size();j++){
+                if((cnt[fren[arr[i].se][j]])%2 == 0){
+                    cur_mn = min(cur_mn,mn_w + weight[fren[arr[i].se][j]]);
+                }
             }
         }
-        if(sum < n)mn_w = 1e18;
-        cout<<"cur_mn : "<<cur_mn<<"\n";
-        cout<<"sum : "<<sum<<"\n";
-        cout<<min(mn_w,cur_mn)<<"\n";
         
+        cout<<cur_mn<<"\n";     
         
     }
 
     return 0;
 }
+
+/*
+sum += cnt[arr[i].se];
+mn_w += arr[i].fi;
+if(sum >= n)break;
+
+
+
+sum += cnt[arr[i].se];
+mn_w += arr[i].fi;
+if(sum >= n || sum%2 == 1){
+    break;
+}
+for(int j = 0;j < fren[arr[i].se].size();j++)cnt[fren[arr[i].se][j]]--;
+*/

@@ -1,8 +1,4 @@
-1   weight : 1  count : 2
-2   weight : 1  count : 2
-3   weight : 1  count : 2
-4   weight : 1  count : 2
-5   weight : 1  count : 2
-cur_mn : 1000000000000000000
-sum : 6
+0
+2
 3
+2
