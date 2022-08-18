@@ -29,6 +29,6 @@ int main()
     freopen("out.txt", "w", stdout);
     #endif
     
-
+    
     return 0;
 }

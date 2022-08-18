@@ -20,14 +20,6 @@ using namespace std;
 #define se second
 #define all(a) a.begin(), a.end()
 
-
-map<string,vector<pii>>ase;
-bool comp(string &a,string &b){
-    int len1 = (int)a.size(),len2 = (int)b.size();
-    if(len1 == len2)return ase[a].size() > ase[b].size();
-    return len1 > len2;
-}
-
 int main()
 {
     FIO;
@@ -35,49 +27,40 @@ int main()
     freopen("in.txt", "r", stdin);
     freopen("out.txt", "w", stdout);
     #endif
+
     int T;cin>>T;
+    
     while(T--){
-        ase.clear();
-        string t;cin>>t;
-        int n;cin>>n;
-        vector<pair<string,int>>s;
-        int len = t.size();
-        for(int i = 1;i <= len;i++){
-            for(int j = 0;j <= len - i;j++){
-                string make = "";
-                for(int k = j;k < j + i;k++)make += t[k];
-                // debug(make);
-                ase[make].push_back({j,j + i - 1});
+        int n,k;cin>>n>>k;
+        string str;cin>>str;
+        map<int,bool>flip;
+        int pre[n+1];
+        MEM(pre,0);
+        for(int i = 0;i < n-k+1;i++){
+            int bit = str[i] - '0';
+            if(!i){
+                if(bit){
+                    pre[0] = 1;
+                    flip[i] = true;
+                }
+            }else{
+
             }
         }
 
-        for (int i = 0; i < n; i++){
-            string temp;cin>>temp;
-            if(ase[temp].size() > 0)
-                s.push_back({temp,i+1});
+        for(int i = 0;i < n-k+1;i++)cout<<"0";
+        int cnt = 0;
+        for(int i = n-k+1,j = 0;i < n;i++,j++){
+            int bit = str[i] - '0';
+            if(flip[j])cnt++;
+            if(cnt%2){
+                bit = !bit;
+            }
+            cout<<(bit)?"0":"1";
         }
-        for(pair<string,int> t : s){
-            debug(t.fi);
-            debug(ase[t.fi]);
-        }
-
-
-        bool done[t.size() + 1];
-        MEM(done,false);
-        int left = t.size();
-        debug(left);
-        vector<pii>answer;
-        while(left > 0){
-            
-        }
-        if(left > 0){
-            cout<< -1<<"\n";
-            continue;
-        }
-
-        cout<<answer.size()<<"\n";
-        for(pii idx : answer)cout<<idx.fi<<" "<<idx.se<<"\n";
-    }    
+        cout<<"\n";
+    }
+    
 
     return 0;
 }

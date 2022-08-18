@@ -26,9 +26,11 @@ int main()
     FIO;
     #ifdef IHAVETOPEE 
     freopen("in.txt", "r", stdin);
-    freopen("out.txt", "w", stdout);
+    freopen("in.txt", "w", stdout);
     #endif
-    
+    int n = 70000;
+    cout<<"1\n"<<n<<" "<<"1000009\n";
+    for(int i = 0;i < n;i++)cout<<i+1<<" ";
 
     return 0;
 }

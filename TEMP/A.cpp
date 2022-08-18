@@ -23,12 +23,12 @@ using namespace std;
 
 int main()
 {
-    FIO;
-    #ifdef IHAVETOPEE 
-    freopen("in.txt", "r", stdin);
-    freopen("out.txt", "w", stdout);
-    #endif
-    
+	FIO;
+	#ifdef IHAVETOPEE 
+	freopen("in.txt", "r", stdin);
+	freopen("out.txt", "w", stdout);
+	#endif
+	
 
-    return 0;
+	return 0;
 }
